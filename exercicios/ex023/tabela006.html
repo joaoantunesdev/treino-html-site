@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.4em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cnome, .cidade {
+            background-color: lightgray;
+            color: white;
+        }
+
+        .cprof {
+            background-color: yellow;
+            color: beige;
+        
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        div#conteiner {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="cidade">
+        <col class="cgen">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>32</td>
+            <td>Contadora</td>
+        </tr>
+    <tr>
+        <td>Joao</td>
+        <td>Masculino</td>
+        <td>35</td>
+        <td>Desenvolvedor</td>
+    </tr>
+    <tr>
+        <td>Carlos</td>
+        <td>Masculino</td>
+        <td>23</td>
+        <td>Bancario</td>
+    </tr>
+    <tr>
+        <td>Carla</td>
+        <td>Feminino</td>
+        <td>26</td>
+        <td>Dentista</td>
+    </tr>
+    <tr>
+        <td>Jose</td>
+        <td>Masculino</td>
+        <td>45</td>
+        <td>Vendedor</td>
+    </tr>
+    <tr>
+        <td>Alice</td>
+        <td>Feminino</td>
+        <td>33</td>
+        <td>Advogada</td>
+    </tr>
+    
+    </table>
+
+    <h2>Produtos</h2>
+
+    <div id="conteiner">
+        <table>
+            <thead>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TV</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>CD</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>9</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>7</td>
+                <td>10</td>
+                <td>10</td>
+                <td>9</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Disco</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+                <td>10</td>
+                <td>7</td>
+                <td>7</td>
+                <td>8</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Fone</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>7</td>
+                <td>8</td>
+                <td>10</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Cadeira</td>
+                <td>8</td>
+                <td>10</td>
+                <td>7</td>
+                <td>10</td>
+                <td>7</td>
+                <td>9</td>
+                <td>7</td>
+                <td>9</td>
+                <td>7</td>
+                <td>7</td>
+                <td>10</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Notebook</td>
+                <td>7</td>
+                <td>9</td>
+                <td>7</td>
+                <td>10</td>
+                <td>7</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7</td>
+                <td>10</td>
+                <td>9</td>
+                <td>7</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+</body>
+</html>
